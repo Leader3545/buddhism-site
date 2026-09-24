@@ -77,7 +77,7 @@ const enlightenmentTimeline = [
 ];
 
 const dharmaTalkEvents = [
-  { year: "ปฐมเทศนา", title: "ธัมมจักกัปปวัตตนสูตร", description: "ว่าด้วยทางสายกลางและอริยสัจ 4 (ความจริงอันประเสริฐ 4 ประการ ได้แก่ ทุกข์ สมุทัย นิโรธ มรรค)", image: "/images/prasudthammajak.jpg" }
+  { year: "ปฐมเทศนา", title: "ธัมมจักกัปปวัตตนสูตร", description: "ว่าด้วยทางสายกลางและอริยสัจ 4 (ความจริงอันประเสริฐ 4 ประการ ได้แก่ ทุกข์ สมุทัย นิโรธ มรรค)", image: "images/prasudthammajak.jpg" }
 ];
 
 const propagationJourney = [
