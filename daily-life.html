@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>พระพุทธศาสนากับชีวิตประจำวัน — [ชื่อเว็บไซต์]</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+<div id="navbar-root"></div>
+
+<div id="page-header-root"
+     data-category="ธรรมะในชีวิตจริง"
+     data-title="พระพุทธศาสนากับชีวิตประจำวัน"
+     data-desc="[คำอธิบายสั้นเกี่ยวกับหน้านี้ — การนำหลักธรรมไปปรับใช้ในสถานการณ์ต่าง ๆ ของชีวิต]">
+</div>
+
+<!-- ============================================== SITUATION TABS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><div class="eyebrow">เลือกสถานการณ์</div><h2>ธรรมะสำหรับชีวิตประจำวัน</h2></div>
+    </div>
+    <div class="tabs-nav" id="situationTabsNav"></div>
+    <div id="situationTabsPanel"></div>
+  </div>
+</section>
+
+<div id="footer-root"></div>
+<button class="back-to-top" id="backToTop" aria-label="กลับขึ้นด้านบน">↑</button>
+
+<script src="js/data.js"></script>
+<script src="js/components.js"></script>
+<script>
+  insertNavbar("daily-life");
+  insertFooter();
+  insertPageHeader();
+  renderSituationTabs("situationTabsNav", "situationTabsPanel", dailyLifeSituations);
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

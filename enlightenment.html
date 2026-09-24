@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>การตรัสรู้และการเผยแผ่พระธรรม — พระพุทธศาสนา</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+<div id="navbar-root"></div>
+
+<div id="page-header-root"
+     data-category="ธรรมจักร"
+     data-title="การตรัสรู้และการเผยแผ่พระธรรม"
+     data-desc="เส้นทางจากการตรัสรู้สู่การเผยแผ่พระธรรมคำสอน">
+</div>
+
+<!-- ==================================================== ENLIGHTENMENT -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><div class="eyebrow">ใต้ต้นพระศรีมหาโพธิ์</div><h2>การตรัสรู้</h2></div>
+    </div>
+    <div id="enlightenment-timeline"></div>
+  </div>
+</section>
+
+<!-- ===================================================== FIRST TEACHINGS -->
+<section class="section section--cream">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><div class="eyebrow">ปฐมเทศนา</div><h2>การแสดงธรรม</h2></div>
+    </div>
+    <div id="dharma-talk-timeline"></div>
+  </div>
+</section>
+
+<!-- ==================================================== PROPAGATION -->
+<!-- <section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><div class="eyebrow">การเดินทาง</div><h2>การเผยแผ่พระธรรม</h2></div>
+    </div>
+    <div id="propagation-timeline"></div>
+  </div>
+</section> -->
+
+<!-- ==================================================== BUDDHAKICCA -->
+<!-- <section class="section section--brown">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><div class="eyebrow">พุทธกิจประจำวัน</div><h2>พุทธกิจ</h2></div>
+    </div>
+    <div id="buddhakicca-cards"></div>
+  </div>
+</section> -->
+
+<!-- ============================================================== CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div>
+        <h2>เริ่มต้นเรียนรู้พระพุทธศาสนาไปด้วยกัน</h2>
+        <p>สำรวจเนื้อหาเพิ่มเติมในเว็บไซต์</p>
+      </div>
+      <a href="index.html" class="btn btn-outline" style="border-color:rgba(248,244,234,.4);color:var(--ivory);">หน้าหลัก</a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-root"></div>
+<button class="back-to-top" id="backToTop" aria-label="กลับขึ้นด้านบน">↑</button>
+
+<script src="js/data.js"></script>
+<script src="js/components.js"></script>
+<script>
+  insertNavbar("enlightenment");
+  insertFooter();
+  insertPageHeader();
+  renderTimeline("enlightenment-timeline", enlightenmentTimeline);
+  renderTimeline("dharma-talk-timeline", dharmaTalkEvents);
+  renderTimeline("propagation-timeline", propagationJourney);
+  renderInfoCards("buddhakicca-cards", buddhakiccaCards);
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

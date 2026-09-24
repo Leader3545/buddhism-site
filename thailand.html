@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>พระพุทธศาสนาในประเทศไทย — [ชื่อเว็บไซต์]</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+<div id="navbar-root"></div>
+
+<div id="page-header-root"
+     data-category="ประวัติศาสตร์และวัฒนธรรม"
+     data-title="พระพุทธศาสนาในประเทศไทย"
+     data-desc="[คำอธิบายสั้นเกี่ยวกับหน้านี้ — ความเป็นมาของพระพุทธศาสนาในแผ่นดินไทย]">
+</div>
+
+<!-- ========================================================= TIMELINE -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><div class="eyebrow">เส้นทางประวัติศาสตร์</div><h2>ยุคสมัยแห่งพระพุทธศาสนาไทย</h2></div>
+    </div>
+    <div id="thailand-timeline"></div>
+  </div>
+</section>
+
+<!-- ============================================= ART / CULTURE / TRADITION -->
+<section class="section section--cream">
+  <div class="container">
+    <div class="section-head reveal">
+      <div><div class="eyebrow">มรดกทางศาสนา</div><h2>สถานที่ พุทธศิลป์ และวัฒนธรรม</h2></div>
+    </div>
+    <div id="thailand-cards"></div>
+  </div>
+</section>
+
+<div id="footer-root"></div>
+<button class="back-to-top" id="backToTop" aria-label="กลับขึ้นด้านบน">↑</button>
+
+<script src="js/data.js"></script>
+<script src="js/components.js"></script>
+<script>
+  insertNavbar("thailand");
+  insertFooter();
+  insertPageHeader();
+  renderTimeline("thailand-timeline", thailandTimeline);
+  renderImageCards("thailand-cards", thailandCards);
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

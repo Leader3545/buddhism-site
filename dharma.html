@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>พระธรรมคำสอน — พระพุทธศาสนา</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+<div id="navbar-root"></div>
+
+<div id="page-header-root"
+     data-category="คำสอน"
+     data-title="พระธรรมคำสอน"
+     data-desc="หลักธรรมคำสอนสำคัญในพระพุทธศาสนา">
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="eyebrow">หลักธรรม</div>
+        <h2>หมวดหมู่คำสอน</h2>
+      </div>
+      <!-- <p style="margin:0;max-width:32ch;">[คำอธิบายสั้นเกี่ยวกับการจัดหมวดหมู่หลักธรรมในหน้านี้]</p> -->
+    </div>
+    <div id="dharma-cards"></div>
+  </div>
+</section>
+
+<section class="section section--cream">
+  <div class="container">
+    <div class="quote-card reveal">
+      <p>หลักคำสอนสำคัญของพระพุทธศาสนามุ่งเน้นไปที่การเข้าใจความจริงของชีวิตและการหลุดพ้นจากความทุกข์</p>
+      <div class="source">กรรม (กฎแห่งกรรม) คำสอนที่ว่าทำดีได้ดี ทำชั่วได้ชั่ว ทุกการกระทำย่อมมีผลตามมา</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== CTA -->
+<section class="section">
+  <div class="container">
+    <div class="cta-band reveal">
+      <div>
+        <h2>เริ่มต้นเรียนรู้พระพุทธศาสนาไปด้วยกัน</h2>
+        <p>สำรวจเนื้อหาเพิ่มเติมในเว็บไซต์</p>
+      </div>
+      <a href="index.html" class="btn btn-outline" style="border-color:rgba(248,244,234,.4);color:var(--ivory);">หน้าหลัก</a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-root"></div>
+<button class="back-to-top" id="backToTop" aria-label="กลับขึ้นด้านบน">↑</button>
+
+<script src="js/data.js"></script>
+<script src="js/components.js"></script>
+<script>
+  insertNavbar("dharma");
+  insertFooter();
+  insertPageHeader();
+  renderDharmaCards("dharma-cards", dharmaPrinciples);
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
